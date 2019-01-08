@@ -27,7 +27,7 @@ module.exports = { name: 'command-name', async run(client, message, args) {
 
 		})
 		.catch(collected => {
-			console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
-			message.reply('you didn\'t react with neither a thumbs up, nor a thumbs down.');
+			console.log(`After a minute, only ${collected.size} reacted.`);
+			message.reply('You didn\'t react so I guess you don\'t want to play...');
 		});
 }};
